@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium</title>
+</head>
+
+<body>
+    <h1>Selenium</h1>
+    <form action="{% url 'addtocart' %}" method="POST">
+        {% csrf_token %}
+        <label for="url">Enter ASIN:</label>
+        <input type="text" id="url" name="asin">
+        <button type="submit">Open</button>
+    </form>
+
+    <h3>Try B09DG86XJS</h3>
+
+</body>
+
+</html>
